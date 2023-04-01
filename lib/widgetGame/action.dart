@@ -9,39 +9,7 @@ class Featured extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Column(
-          children: [
-            Row(
-              children: [
-                Padding(
-                  padding: const EdgeInsets.all(15.0),
-                  child: Text(
-                    "Featured game",
-                    style: TextStyle(
-                        color: Colors.black,
-                        fontSize: 15,
-                        fontWeight: FontWeight.w400),
-                  ),
-                ),
-              ],
-            ),
-            SizedBox(
-              width: double.infinity,
-              height: 250,
-              child: ListView.builder(
-                itemCount: slider.length,
-                scrollDirection: Axis.horizontal,
-                itemBuilder: (context, index) {
-                  return gameSlider(
-                      slider[index].name.toString(),
-                      slider[index].download.toString(),
-                      slider[index].image.toString(),
-                      context);
-                },
-              ),
-            ),
-          ],
-        ),
+
         SizedBox(
           height: 10,
         ),
